@@ -8,10 +8,10 @@
       { "clave": "D", "texto": "Camina pausadamente, perezosamente. Su andar es tranquilo y constante. Nunca anda grandes distancias." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "S" },
+        { "clave": "C", "texto": "M" },
+        { "clave": "D", "texto": "F" }
     ]
   },
   {
@@ -23,10 +23,10 @@
       { "clave": "D", "texto": "Su mirada es alegre, vivaz, amigable. A menudo curiosa." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "M" },
+        { "clave": "D", "texto": "S" }
     ]
   },
   {
@@ -38,10 +38,10 @@
       { "clave": "D", "texto": "Le gusta la ropa buena, usar la que corresponde en cada caso. Quiere decir algo con la forma de vestir sin querer ser llamativo ni demasiado elegante. Su ropa es práctica." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "F" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "C" }
     ]
   },
   {
@@ -53,10 +53,10 @@
       { "clave": "D", "texto": "Saluda según su estado de ánimo, a todo el mundo o a nadie. Chilla de una acera a la otra, se lanza al cuello del otro para abrazarlo efusivamente. Saluda a menudo y a mucha gente." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "M" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "C" },
+        { "clave": "D", "texto": "S" }
     ]
   },
   {
@@ -68,10 +68,10 @@
       { "clave": "D", "texto": "Se recoge a gusto en su tiempo libre. Ama el silencio, los lugares apartados, la naturaleza, el arte. No le gustan los sensacionalismos. Piensa, lee, escribe, hace música, arma puzzles. Nunca sobrepasa el tiempo libre." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "S" },
+        { "clave": "B", "texto": "C" },
+        { "clave": "C", "texto": "F" },
+        { "clave": "D", "texto": "M" }
     ]
   },
   {
@@ -83,10 +83,10 @@
       { "clave": "D", "texto": "Escribe sólo cuando hay una razón clara y es necesario hacerlo. Calcula lo que escribe y cómo lo escribe. Sus cartas son objetivas, frías, determinantes. Las termina y las despacha." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "M" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "C" }
     ]
   },
   {
@@ -98,10 +98,205 @@
       { "clave": "D", "texto": "El obstáculo le permite hacer una pausa, siempre saludable. Una vez solucionado por sí solo el problema sigue pausadamente su camino. De ser absolutamente necesario, comienza poco a poco a solucionarlo." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
-        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
-        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
-        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "S" },
+        { "clave": "C", "texto": "M" },
+        { "clave": "D", "texto": "F" }
+    ]
+  },
+  {
+    "pregunta": "En el tránsito:",
+    "opciones": [
+      { "clave": "A", "texto": "Se lo toma con calma. Espera tranquilamente hasta que la masa se ponga en movimiento. Entonces se deja empujar por ella. Se siente seguro y protegido de esta forma. No se molesta tampoco cuando se convierte en un obstáculo y todos le recriminan." },
+      { "clave": "B", "texto": "Va con cara seria, pero abierta; sin sentirse a gusto entre la multitud. Le molesta el ruido de la circulación. Se preocupa de ir a la defensiva y con cuidado para no molestar, no atropellar, no llamar la atención." },
+      { "clave": "C", "texto": "Reacciona nerviosa e imprudentemente, anda zigzagueando, choca con las personas y está en permanente peligro de acabar encima de algún radiador." },
+      { "clave": "D", "texto": "Observa fría y señorialmente el tráfico, las luces y la masa. Va con seguridad entre la multitud y, si es necesario, se abre camino a codazos." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "F" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "C" }
+    ]
+  },
+  {
+    "pregunta": "En las comidas:",
+    "opciones": [
+      { "clave": "A", "texto": "Llega puntualmente, comienza sin preámbulos. No se alarga en la sobremesa, vuelve rápidamente a sus ocupaciones." },
+      { "clave": "B", "texto": "Llega ceremoniosamente a la mesa. Come silenciosamente, concentrado en lo que hace. Come poco. Come también lo que no le gusta. Habla poco. Se retira con gusto a descansar." },
+      { "clave": "C", "texto": "Llega a cualquier hora. No se rige demasiado por los modales. Juega con los vasos, platos, cubiertos. Come sólo lo que le gusta. Habla y gesticula. Alarga las comidas indefinidamente." },
+      { "clave": "D", "texto": "Llega demasiado pronto o demasiado tarde. Come tranquilo. Habla pausadamente. Siempre es el último en terminar. A veces da la impresión de que dormir y comer fuesen para él las cosas más importantes." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "F" }
+    ]
+  },
+  {
+    "pregunta": "En la sala de espera de un dentista:",
+    "opciones": [
+      { "clave": "A", "texto": "Se lo ve con gesto preocupado y paciente. Se refugia en el silencio. Lee para aprovechar el tiempo, espera, mira la hora y sufre 'heroicamente' este trágico momento." },
+      { "clave": "B", "texto": "No se excita demasiado, aguanta tranquilo. Puede que llegue incluso a dormitar." },
+      { "clave": "C", "texto": "Está excitado, comienza a conversar para no pensar en su dolor. Transpira, tirita. Se alborota. Gusta ser compadecido." },
+      { "clave": "D", "texto": "Pone cara dura, valiente. No quiere que se le note. Busca alguna distracción práctica." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "M" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "C" }
+    ]
+  },
+  {
+    "pregunta": "En un micro o tren:",
+    "opciones": [
+      { "clave": "A", "texto": "Se abre camino con seguridad, desafiante pero con tacto. Sólo habla si es necesario; prefiere que le hablen a él primero." },
+      { "clave": "B", "texto": "Provoca una conversación amena, de vez en cuando distrayendo a todos los pasajeros. Se sonroja fácilmente, pero está siempre dispuesto a entablar conversación y hacer amistades con desconocidos." },
+      { "clave": "C", "texto": "Está ocupado pensando en lo que quiere hacer. De entrar en conversación, puede llegar a ser un interlocutor muy agradable, ¡si no se queda dormido!" },
+      { "clave": "D", "texto": "Prefiere sentarse en un rincón. No habla con extraños, pero sí contesta amablemente si es interpelado." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "S" },
+        { "clave": "C", "texto": "F" },
+        { "clave": "D", "texto": "M" }
+    ]
+  },
+  {
+    "pregunta": "En el trabajo:",
+    "opciones": [
+      { "clave": "A", "texto": "Nunca se sabe cuándo llega ya que se distrae o entretiene por el camino. Trabaja irregularmente. De tanto en tanto sueña o silba, conversa, desaparece para buscar comida o bebida. Le cuesta 'un mundo' la constancia y la continuidad." },
+      { "clave": "B", "texto": "Llega puntualmente. Comienza su trabajo con decisión y firmeza. Racionaliza siempre. Presiona su ambiente hacia un mayor rendimiento. Quiere alcanzar nuevos 'records'." },
+      { "clave": "C", "texto": "Se dirige al trabajo en silencio, concentrado y consciente de su deber. Siempre es puntual. Es responsable y tranquilo en su ocupación. No le gustan los charlatanes o los 'histéricos'." },
+      { "clave": "D", "texto": "Se hace esperar con frecuencia. Con toda tranquilidad... suele quedarse dormido. Tiene un ritmo de trabajo lento y tranquilo, pero es constante y de fiar. Si se deja llevar puede llegar a ser un holgazán de categoría." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "S" },
+        { "clave": "B", "texto": "C" },
+        { "clave": "C", "texto": "M" },
+        { "clave": "D", "texto": "F" }
+    ]
+  },
+  {
+    "pregunta": "La risa:",
+    "opciones": [
+      { "clave": "A", "texto": "Se ríe sólo con motivo. Su risa no es fuerte, prefiere sonreír. Su risa es más bien interior, así como su alegría." },
+      { "clave": "B", "texto": "Le gusta reírse y lo hace calmadamente. Puede pasar una hora antes de que 'capte' la situación y comience a reírse. Lo hace sin llamar la atención pero contagiosamente." },
+      { "clave": "C", "texto": "Ríe solamente cuando hay un motivo fundado para hacerlo. Entonces lo hace fuerte, de corazón. A veces estrepitosamente pero nunca muy largo." },
+      { "clave": "D", "texto": "Es capaz de reírse en cualquier lugar y por cualquier cosa, a veces incluso sin motivo. Recorre todas las octavas, canturrea, se ríe 'para adentro', se contorsiona, aulla, no puede dejar de reír..." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "M" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "C" },
+        { "clave": "D", "texto": "S" }
+    ]
+  },
+  {
+    "pregunta": "Los gastos:",
+    "opciones": [
+      { "clave": "A", "texto": "No gasta un centavo en cosas innecesarias. Todo gasto debe ser calculado y provechoso. No es gastador si no cae en fumar, beber o jugar con exceso. En ese caso puede llegar a derrochar todo su dinero." },
+      { "clave": "B", "texto": "Por naturaleza ahorrador, no gasta nunca impulsivamente. Suele necesitar dinero a menudo, ya que se toma 'tiempo libre' con frecuencia. Le salva el que suela tenderse a menudo para descansar un poco..." },
+      { "clave": "C", "texto": "Es incapaz de distribuir su dinero. Lo gasta según sus apetencias o estados de ánimo. Le gusta 'ser caballero' e invitar. Es incapaz de resistir una buena propaganda. Su cuota mensual nunca llega hasta fin de mes." },
+      { "clave": "D", "texto": "Es el ahorrador por excelencia. Es muy crítico con sus gastos. No se deja seducir fácilmente por la propaganda. Da parte de su dinero a obras sociales o de caridad. Le gusta que sus posesiones sirvan al bien físico y espiritual de los demás." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "M" }
+    ]
+  },
+  {
+    "pregunta": "Al dar la mano:",
+    "opciones": [
+      { "clave": "A", "texto": "No termina nunca de dar la mano, pero a veces la da sólo tímidamente. A menudo golpea  en los hombros." },
+      { "clave": "B", "texto": "Aprieta firme y fuerte al dar la mano." },
+      { "clave": "C", "texto": "No sabe lo que es dar la mano con efusividad. Su apretón de manos es tranquilo y sincero." },
+      { "clave": "D", "texto": "Da la mano plenamente convencido de lo que hace. Quiere expresar su cercanía y amistad más profunda." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "S" },
+        { "clave": "B", "texto": "C" },
+        { "clave": "C", "texto": "F" },
+        { "clave": "D", "texto": "M" }
+    ]
+  },
+  {
+    "pregunta": "Hablando:",
+    "opciones": [
+      { "clave": "A", "texto": "Habla antes de pensar. Habla rápido, exagera, fanfarronea, señala, gesticula con pies y manos. Le gusta ser el centro y llamar la atención. No es duro al hablar; sí sabe galantear y adular." },
+      { "clave": "B", "texto": "Habla poco, piensa y reflexiona. Cuando habla sus palabras son profundas y con sentido. Habla bajo. Elabora en silencio sus experiencias compartiéndolas comedidamente. Cuando se siente defraudado o afligido puede hacer duras críticas." },
+      { "clave": "C", "texto": "Es objetivo y parco al hablar, de voz clara y dominante. Su expresión es clara, decidida, a menudo dura. Piensa antes de hablar. No habla innecesariamente." },
+      { "clave": "D", "texto": "Normalmente habla poco. Sus palabras son comedidas y bien escogidas. Habla 'al grano' sin agobiarse. No hace valoraciones ni da juicios prematuramente. Habla con cierta monotonía. A veces es bueno para conversar." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "S" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "C" },
+        { "clave": "D", "texto": "F" }
+    ]
+  },
+  {
+    "pregunta": "Cómo ve la vida:",
+    "opciones": [
+      { "clave": "A", "texto": "Valora la vida según la posición que ocupa y lo que rinde en ella. Su objetivo es vencer en la 'lucha' por la vida. La Historia Universal es a sus ojos la historia de la lucha por la vida." },
+      { "clave": "B", "texto": "Valora la vida según el cobijamiento y la paz que le brinde. Equilibrio y tranquilidad son lo principal. Opina que muchas cosas deberían aceptarse tal y como son. El sentido de la vida es alcanzar el mayor grado de paz interior y exterior." },
+      { "clave": "C", "texto": "Valora la vida según las alegrías que ésta le depara. Si no encuentra alegría tampoco le encuentra sentido a la vida, ya que este consiste en dar y recibir alegría y felicidad." },
+      { "clave": "D", "texto": "Juzga la vida de acuerdo a la medida de la culpa y la gracia. La Historia es para él una historia de pecado y conversión. El sentido de la vida es superar el pecado con la virtud y la santidad." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "F" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "M" }
+    ]
+  },
+  {
+    "pregunta": "Cómo reza:",
+    "opciones": [
+      { "clave": "A", "texto": "Da la impresión de estar distraído y ser superficial. Reza saltando de una cosa a otra, entremezclando la gratitud con el perdón y las peticiones. Lo hace con buena intención y quiere llevarse con Dios tan bien como con los hombres." },
+      { "clave": "B", "texto": "Reza seguro, con orgullo y sopesadamente. Siempre orienta su oración para beneficio propio. Se presenta decidido y exigente ante Dios." },
+      { "clave": "C", "texto": "Presenta como su intención más grande el hecho de estar en desventaja con los demás. Pide paciencia y aguante, energía y rendimiento. Reza en silencio, meditativamente, sin exigir y nunca atropelladamente." },
+      { "clave": "D", "texto": "Tiene un impulso interior, profundo y sincero de hablar con Dios. Se sabe pecador y se siente a menudo como 'hijo pródigo'. Su oración más frecuente es la petición, muchas veces interior, por otros." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "S" },
+        { "clave": "B", "texto": "C" },
+        { "clave": "C", "texto": "F" },
+        { "clave": "D", "texto": "M" }
+    ]
+  },
+  {
+    "pregunta": "En la confesión:",
+    "opciones": [
+      { "clave": "A", "texto": "Se prepara bien y con exactitud, acercándose seguro de sí mismo a la confesión. Se confiesa tranquilo, recibe la penitencia y se retira igualmente seguro de sí mismo." },
+      { "clave": "B", "texto": "Llega con recogimiento y bien preparado a la confesión. Se siente abatido por lo grave de sus culpas y se acusa detalladamente de ellas. Agradece sinceramente cada palabra de aliento. Se siente aliviado y cumple exactamente la penitencia." },
+      { "clave": "C", "texto": "Se siente intranquilo, le cuesta ordenar sus pensamientos, habla nerviosamente y sin orden, se olvida con frecuencia de la penitencia." },
+      { "clave": "D", "texto": "Se deja tiempo, pero es sincero y exacto. No está especialmente excitado ni es superficial. Agradece sinceramente la absolución. Cumple exactamente la penitencia... ¡cuando se acuerda de ella!" }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "C" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "F" }
+    ]
+  },
+  {
+    "pregunta": "Cómo se imagina el cielo:",
+    "opciones": [
+      { "clave": "A", "texto": "Anhela y espera alcanzar la redención de todo el odio e intranquilidad de este mundo. Allí no habrá más luchas ni esfuerzos, sino sólo la paz y la tranquilidad divinas, el cobijamiento y la seguridad en Dios." },
+      { "clave": "B", "texto": "Espera alcanzar la remisión total de sus culpas, la presencia infinita de Dios y la unión con El. Espera alcanzar gracia y santidad. Así estará profundamente cobijado y protegido, habrá alcanzado la plenitud." },
+      { "clave": "C", "texto": "Espera encontrar alegría y felicidad. La fascinante magnificencia y gloria divinas dominan su visión del paraíso." },
+      { "clave": "D", "texto": "Espera participar de la gloria y del poder divinos. Confía en la palabra del Señor: 'Reinarán sobre las tribus de Israel'. El cielo es para él la mayor excelsitud y grandeza." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "F" },
+        { "clave": "B", "texto": "M" },
+        { "clave": "C", "texto": "S" },
+        { "clave": "D", "texto": "C" }
     ]
   }
 ]
