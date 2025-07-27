@@ -56,15 +56,33 @@ questions.forEach((q, idx) => {
             <tr>
               <th>Temperamento</th>
               <th>Cantidad</th>
+              <th>Tipo de temperamento</th>
             </tr>
           </thead>
           <tbody>
-            {Object.entries(resultCount).map(([tipo, cantidad]) => (
-              <tr>
-                <td>{tipo}</td>
-                <td>{cantidad}</td>
-              </tr>
-            ))}
+            {
+              (() => {
+                const entries = Object.entries(resultCount);
+                if (entries.length === 0) return null;
+                const max = Math.max(...entries.map(([, v]) => v));
+                const principales = entries.filter(([, v]) => v === max).map(([k]) => k);
+                const secundarios = entries.filter(([, v]) => v < max).map(([, v]) => v);
+                const segundoMax = secundarios.length > 0 ? Math.max(...secundarios) : null;
+                const secundariosKeys = segundoMax !== null ? entries.filter(([, v]) => v === segundoMax).map(([k]) => k) : [];
+                return entries.map(([tipo, cantidad]) => {
+                  let leyenda = '';
+                  if (principales.includes(tipo)) leyenda = 'Principal';
+                  else if (secundariosKeys.includes(tipo)) leyenda = 'Secundario';
+                  return (
+                    <tr>
+                      <td>{tipo}</td>
+                      <td>{cantidad}</td>
+                      <td>{leyenda}</td>
+                    </tr>
+                  );
+                });
+              })()
+            }
           </tbody>
         </table>
         <div style="text-align:center;margin-top:2rem;">
