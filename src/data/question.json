@@ -1,0 +1,107 @@
+[
+  {
+    "pregunta": "Al caminar:",
+    "opciones": [
+      { "clave": "A", "texto": "Tiene un paso firme, resuelto. Pisa fuerte, camina rápido y seguro en una dirección determinada. No se deja desviar fácilmente." },
+      { "clave": "B", "texto": "Su paso es ágil. Salta, trota, camina en zig-zag y descuidadamente. Se deja desviar fácilmente." },
+      { "clave": "C", "texto": "Camina silenciosamente, concentrado, lento, arrastradamente. En ocasiones da la impresión de estar muy cansado o apesadumbrado." },
+      { "clave": "D", "texto": "Camina pausadamente, perezosamente. Su andar es tranquilo y constante. Nunca anda grandes distancias." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "La mirada:",
+    "opciones": [
+      { "clave": "A", "texto": "Tiene una mirada punzante, resuelta, firme y crítica. Mira calculadoramente y en ocasiones amenazadoramente." },
+      { "clave": "B", "texto": "Tiene una mirada plácida, lánguida e inexpresiva. A menudo cierra los ojos para dormir. Puede llegar a ser una mirada curiosa, pero de una curiosidad lenta, calmada." },
+      { "clave": "C", "texto": "Mira seria, preocupada o tristemente. En ocasiones parece 'mirar a las nubes', pero suele estar 'mirando hacia adentro'. Su mirada es bonachona, profunda y refleja admiración. Le gusta cerrar los ojos y meditar." },
+      { "clave": "D", "texto": "Su mirada es alegre, vivaz, amigable. A menudo curiosa." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "El vestir:",
+    "opciones": [
+      { "clave": "A", "texto": "Sigue la moda pero recatadamente. Viste siempre pulcramente y expresando algo. Sin embargo llama a veces la atención porque lleva un botón desabrochado, la camisa fuera o el pañuelo sobresaliendo del bolsillo y a punto de caérsele." },
+      { "clave": "B", "texto": "Elige colores oscuros, no le gustan los colores chillones ni las formas estrambóticas. Su ropa es siempre impecable." },
+      { "clave": "C", "texto": "Le gusta la ropa elegante, llamativa. Suele ir a la moda, puede llegar a gastar demasiado en ropa; o andar descuidado, desprolijo." },
+      { "clave": "D", "texto": "Le gusta la ropa buena, usar la que corresponde en cada caso. Quiere decir algo con la forma de vestir sin querer ser llamativo ni demasiado elegante. Su ropa es práctica." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "Al saludar:",
+    "opciones": [
+      { "clave": "A", "texto": "Quisiera saludar a todos, pero no se atreve. Cuando saluda lo hace en forma cortés y amigable. Se entrega todo al saludar." },
+      { "clave": "B", "texto": "Saluda recién cuando ya se ha pasado diez metros. Entonces lo hace cortés y amigablemente. En ocasiones puede pasar silenciosamente sin saludar a nadie." },
+      { "clave": "C", "texto": "Sólo saluda cuando le parece necesario y apropiado. Cuando lo hace es notoriamente, en forma calculada y clara, sin ser impertinente." },
+      { "clave": "D", "texto": "Saluda según su estado de ánimo, a todo el mundo o a nadie. Chilla de una acera a la otra, se lanza al cuello del otro para abrazarlo efusivamente. Saluda a menudo y a mucha gente." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "El tiempo libre: (vacaciones)",
+    "opciones": [
+      { "clave": "A", "texto": "Se lanza despreocupada y alegremente a su tiempo libre. Va detrás de la última sensación. Le gusta ir en grupo, correr aventuras, variar, improvisar. Alarga su tiempo libre al máximo y le cuesta un mundo dejarlo." },
+      { "clave": "B", "texto": "Trabaja en su tiempo libre. Es enemigo de todo lo que sea perder el tiempo. Planifica su tiempo libre y lo ocupa en actividades relacionadas con su estudio o profesión, en todo lo que le ayude a mejorar su posición." },
+      { "clave": "C", "texto": "Le encanta tener tiempo libre. Lo usa preferentemente para conversar, entretenerse calmadamente. A menudo para disfrutar de una buena comida. Suele hacer largas siestas a la sombra, se queda durmiendo aun cuando el trabajo ya haya comenzado hace rato." },
+      { "clave": "D", "texto": "Se recoge a gusto en su tiempo libre. Ama el silencio, los lugares apartados, la naturaleza, el arte. No le gustan los sensacionalismos. Piensa, lee, escribe, hace música, arma puzzles. Nunca sobrepasa el tiempo libre." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "Escribiendo cartas/correos:",
+    "opciones": [
+      { "clave": "A", "texto": "Escribe sólo cosas importantes y profundas. Piensa bien lo que quiere escribir. No se contenta con lo escrito, borra la carta y la empieza de nuevo. Termina la carta y la envía. Le preocupa saber si escribió realmente lo que debía y si lo hizo correctamente." },
+      { "clave": "B", "texto": "Escribe poco, pausadamente y con detalles. Sus palabras no son emotivas, pero sí sinceras y correctas. Puede ser que sus cartas nunca lleguen a destino... ¡aún están sobre su escritorio!" },
+      { "clave": "C", "texto": "Comienza a escribir según su estado de ánimo. Interrumpe la frase y comienza con algo nuevo. Sigue escribiendo al día siguiente. Olvida cosas importantes. Escribe entretenidamente. Se acuerda de la carta una semana después de terminarla y la despacha." },
+      { "clave": "D", "texto": "Escribe sólo cuando hay una razón clara y es necesario hacerlo. Calcula lo que escribe y cómo lo escribe. Sus cartas son objetivas, frías, determinantes. Las termina y las despacha." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  },
+  {
+    "pregunta": "Ante un obstáculo:",
+    "opciones": [
+      { "clave": "A", "texto": "No 'arruga', piensa rápidamente, agarra el obstáculo y lo quita del camino. Pequeños obstáculos (p. ej. una piedra) los despeja de una patada. Le gusta superar las dificultades." },
+      { "clave": "B", "texto": "Se siente tentado a saltar sobre el obstáculo o bien rodearlo para seguir su camino. Procura 'sacarle el cuerpo' a las dificultades, no las toma en serio o se mete en 'camisa de once varas'." },
+      { "clave": "C", "texto": "Medita seria y un tanto preocupadamente la situación. Después elimina el obstáculo consciente de su responsabilidad. Le entristecen las dificultades y teme encontrar tarde la solución." },
+      { "clave": "D", "texto": "El obstáculo le permite hacer una pausa, siempre saludable. Una vez solucionado por sí solo el problema sigue pausadamente su camino. De ser absolutamente necesario, comienza poco a poco a solucionarlo." }
+    ],
+    "resultado": [
+        { "clave": "A", "texto": "Es un caminante decidido y seguro de sí mismo." },
+        { "clave": "B", "texto": "Es un caminante despreocupado y ágil." },
+        { "clave": "C", "texto": "Es un caminante lento y reflexivo." },
+        { "clave": "D", "texto": "Es un caminante pausado y constante." }
+    ]
+  }
+]

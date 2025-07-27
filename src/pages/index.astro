@@ -1,11 +1,291 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Cuestionario de Temperamento" description="Descubre tu temperamento a través de un cuestionario interactivo.">
+  <main>
+    <div class="container">
+      <div id="questionnaire" class="questionnaire">
+        <!-- El contenido inicial será reemplazado por el script -->
+      </div>
+    </div>
+  </main>
 </Layout>
+
+<script type="module">
+let questions = [];
+let current = 0;
+let answers = [];
+
+async function fetchQuestions() {
+  const res = await fetch('/api/questions');
+  questions = await res.json();
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const container = document.getElementById('questionnaire');
+  if (current >= questions.length) {
+    renderResults();
+    return;
+  }
+  const q = questions[current];
+  container.innerHTML = `
+    <div class="question-card">
+      <div class="progress">Pregunta ${current + 1} de ${questions.length}</div>
+      <h2>${q.pregunta}</h2>
+      <form id="optionsForm" class="options">
+        ${q.opciones.map(opt => `
+          <label class="option">
+            <input type="radio" name="option" value="${opt.clave}" required />
+            <span class="option-text">${opt.texto}</span>
+          </label>
+        `).join('')}
+        <button class="next-btn" type="submit">Siguiente</button>
+      </form>
+    </div>
+  `;
+  document.getElementById('optionsForm').onsubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const selected = form.option.value;
+    answers[current] = selected;
+    current++;
+    renderQuestion();
+  };
+}
+
+function renderResults() {
+  const container = document.getElementById('questionnaire');
+  // Contar respuestas por clave
+  const stats = {};
+  for (const ans of answers) {
+    stats[ans] = (stats[ans] || 0) + 1;
+  }
+  // Mostrar resultados
+  container.innerHTML = `
+    <div class="results-card">
+      <div class="result-content">
+        <div class="result-text">¡Cuestionario completado!</div>
+        <div class="stats">
+          ${Object.entries(stats).map(([clave, count]) => `
+            <div class="stat-bar">
+              <div class="stat-label">${clave}</div>
+              <div class="stat-progress">
+                <div class="stat-fill" style="width: ${(count / questions.length) * 100}%" data-percentage="${Math.round((count / questions.length) * 100)}%"></div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+fetchQuestions();
+</script>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .questionnaire {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .results-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .result-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #495057;
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stat-label {
+    width: 80px;
+    font-weight: 500;
+    color: #495057;
+  }
+
+  .stat-progress {
+    flex-grow: 1;
+    height: 24px;
+    background: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .stat-fill {
+    height: 100%;
+    background: #4c6ef5;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+    position: relative;
+  }
+
+  .stat-fill::after {
+    content: attr(data-percentage);
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  /* Estilos para el componente QuestionCard */
+  :global(.question-card) {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.progress) {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  :global(.options) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.option) {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  :global(.option:hover) {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+  }
+
+  :global(.next-btn) {
+    width: 100%;
+    padding: 1rem;
+    background: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  :global(.next-btn:hover:not(:disabled)) {
+    background: #364fc7;
+  }
+
+  :global(.next-btn:disabled) {
+    background: #adb5bd;
+    cursor: not-allowed;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+
+  .progress {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .option {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .option:hover {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+  }
+
+  input[type="radio"] {
+    margin-top: 0.3rem;
+  }
+
+  .option-text {
+    line-height: 1.5;
+    color: #495057;
+  }
+</style>

@@ -1,0 +1,138 @@
+---
+interface Result {
+  clave: string;
+  texto: string;
+}
+
+interface Props {
+  results: Result[];
+  answers: string[];
+}
+
+const { results, answers } = Astro.props;
+
+function getMostFrequentAnswer(answers: string[]): string {
+  const frequency: { [key: string]: number } = {};
+  let maxFreq = 0;
+  let mostFrequent = '';
+
+  answers.forEach(answer => {
+    frequency[answer] = (frequency[answer] || 0) + 1;
+    if (frequency[answer] > maxFreq) {
+      maxFreq = frequency[answer];
+      mostFrequent = answer;
+    }
+  });
+
+  return mostFrequent;
+}
+
+const dominantType = getMostFrequentAnswer(answers);
+const result = results.find(r => r.clave === dominantType);
+---
+
+<div class="results-card">
+  <h2>Resultados del Test</h2>
+  <div class="result-content">
+    <p class="result-text">{result?.texto}</p>
+    <div class="stats">
+      {
+        ['A', 'B', 'C', 'D'].map((type) => {
+          const count = answers.filter(a => a === type).length;
+          const percentage = (count / answers.length) * 100;
+          return (
+            <div class="stat-bar">
+              <div class="stat-label">Tipo {type}</div>
+              <div class="stat-progress">
+                <div 
+                  class="stat-fill" 
+                  style={`width: ${percentage}%`}
+                  data-percentage={`${Math.round(percentage)}%`}
+                />
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .results-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .result-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #495057;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stat-label {
+    width: 80px;
+    font-weight: 500;
+    color: #495057;
+  }
+
+  .stat-progress {
+    flex-grow: 1;
+    height: 24px;
+    background: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .stat-fill {
+    height: 100%;
+    background: #4c6ef5;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+    position: relative;
+  }
+
+  .stat-fill::after {
+    content: attr(data-percentage);
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+</style>
