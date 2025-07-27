@@ -8,10 +8,10 @@
       { "clave": "D", "texto": "Camina pausadamente, perezosamente. Su andar es tranquilo y constante. Nunca anda grandes distancias." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "S" },
-        { "clave": "C", "texto": "M" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Sanguíneo" },
+        { "clave": "C", "texto": "Melancólico" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -23,10 +23,10 @@
       { "clave": "D", "texto": "Su mirada es alegre, vivaz, amigable. A menudo curiosa." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "M" },
-        { "clave": "D", "texto": "S" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Melancólico" },
+        { "clave": "D", "texto": "Sanguíneo" }
     ]
   },
   {
@@ -38,10 +38,10 @@
       { "clave": "D", "texto": "Le gusta la ropa buena, usar la que corresponde en cada caso. Quiere decir algo con la forma de vestir sin querer ser llamativo ni demasiado elegante. Su ropa es práctica." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "F" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "C" }
+        { "clave": "A", "texto": "Flemático" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Colérico" }
     ]
   },
   {
@@ -53,10 +53,10 @@
       { "clave": "D", "texto": "Saluda según su estado de ánimo, a todo el mundo o a nadie. Chilla de una acera a la otra, se lanza al cuello del otro para abrazarlo efusivamente. Saluda a menudo y a mucha gente." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "M" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "C" },
-        { "clave": "D", "texto": "S" }
+        { "clave": "A", "texto": "Melancólico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Colérico" },
+        { "clave": "D", "texto": "Sanguíneo" }
     ]
   },
   {
@@ -68,10 +68,10 @@
       { "clave": "D", "texto": "Se recoge a gusto en su tiempo libre. Ama el silencio, los lugares apartados, la naturaleza, el arte. No le gustan los sensacionalismos. Piensa, lee, escribe, hace música, arma puzzles. Nunca sobrepasa el tiempo libre." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "S" },
-        { "clave": "B", "texto": "C" },
-        { "clave": "C", "texto": "F" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Sanguíneo" },
+        { "clave": "B", "texto": "Colérico" },
+        { "clave": "C", "texto": "Flemático" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -83,10 +83,10 @@
       { "clave": "D", "texto": "Escribe sólo cuando hay una razón clara y es necesario hacerlo. Calcula lo que escribe y cómo lo escribe. Sus cartas son objetivas, frías, determinantes. Las termina y las despacha." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "M" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "C" }
+        { "clave": "A", "texto": "Melancólico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Colérico" }
     ]
   },
   {
@@ -98,10 +98,10 @@
       { "clave": "D", "texto": "El obstáculo le permite hacer una pausa, siempre saludable. Una vez solucionado por sí solo el problema sigue pausadamente su camino. De ser absolutamente necesario, comienza poco a poco a solucionarlo." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "S" },
-        { "clave": "C", "texto": "M" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Sanguíneo" },
+        { "clave": "C", "texto": "Melancólico" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -113,10 +113,10 @@
       { "clave": "D", "texto": "Observa fría y señorialmente el tráfico, las luces y la masa. Va con seguridad entre la multitud y, si es necesario, se abre camino a codazos." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "F" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "C" }
+        { "clave": "A", "texto": "Flemático" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Colérico" }
     ]
   },
   {
@@ -128,10 +128,10 @@
       { "clave": "D", "texto": "Llega demasiado pronto o demasiado tarde. Come tranquilo. Habla pausadamente. Siempre es el último en terminar. A veces da la impresión de que dormir y comer fuesen para él las cosas más importantes." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -143,10 +143,10 @@
       { "clave": "D", "texto": "Pone cara dura, valiente. No quiere que se le note. Busca alguna distracción práctica." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "M" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "C" }
+        { "clave": "A", "texto": "Melancólico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Colérico" }
     ]
   },
   {
@@ -158,10 +158,10 @@
       { "clave": "D", "texto": "Prefiere sentarse en un rincón. No habla con extraños, pero sí contesta amablemente si es interpelado." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "S" },
-        { "clave": "C", "texto": "F" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Sanguíneo" },
+        { "clave": "C", "texto": "Flemático" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -173,10 +173,10 @@
       { "clave": "D", "texto": "Se hace esperar con frecuencia. Con toda tranquilidad... suele quedarse dormido. Tiene un ritmo de trabajo lento y tranquilo, pero es constante y de fiar. Si se deja llevar puede llegar a ser un holgazán de categoría." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "S" },
-        { "clave": "B", "texto": "C" },
-        { "clave": "C", "texto": "M" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Sanguíneo" },
+        { "clave": "B", "texto": "Colérico" },
+        { "clave": "C", "texto": "Melancólico" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -188,10 +188,10 @@
       { "clave": "D", "texto": "Es capaz de reírse en cualquier lugar y por cualquier cosa, a veces incluso sin motivo. Recorre todas las octavas, canturrea, se ríe 'para adentro', se contorsiona, aulla, no puede dejar de reír..." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "M" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "C" },
-        { "clave": "D", "texto": "S" }
+        { "clave": "A", "texto": "Melancólico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Colérico" },
+        { "clave": "D", "texto": "Sanguíneo" }
     ]
   },
   {
@@ -203,10 +203,10 @@
       { "clave": "D", "texto": "Es el ahorrador por excelencia. Es muy crítico con sus gastos. No se deja seducir fácilmente por la propaganda. Da parte de su dinero a obras sociales o de caridad. Le gusta que sus posesiones sirvan al bien físico y espiritual de los demás." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -218,10 +218,10 @@
       { "clave": "D", "texto": "Da la mano plenamente convencido de lo que hace. Quiere expresar su cercanía y amistad más profunda." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "S" },
-        { "clave": "B", "texto": "C" },
-        { "clave": "C", "texto": "F" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Sanguíneo" },
+        { "clave": "B", "texto": "Colérico" },
+        { "clave": "C", "texto": "Flemático" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -233,10 +233,10 @@
       { "clave": "D", "texto": "Normalmente habla poco. Sus palabras son comedidas y bien escogidas. Habla 'al grano' sin agobiarse. No hace valoraciones ni da juicios prematuramente. Habla con cierta monotonía. A veces es bueno para conversar." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "S" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "C" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Sanguíneo" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Colérico" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -248,10 +248,10 @@
       { "clave": "D", "texto": "Juzga la vida de acuerdo a la medida de la culpa y la gracia. La Historia es para él una historia de pecado y conversión. El sentido de la vida es superar el pecado con la virtud y la santidad." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "F" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Flemático" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -263,10 +263,10 @@
       { "clave": "D", "texto": "Tiene un impulso interior, profundo y sincero de hablar con Dios. Se sabe pecador y se siente a menudo como 'hijo pródigo'. Su oración más frecuente es la petición, muchas veces interior, por otros." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "S" },
-        { "clave": "B", "texto": "C" },
-        { "clave": "C", "texto": "F" },
-        { "clave": "D", "texto": "M" }
+        { "clave": "A", "texto": "Sanguíneo" },
+        { "clave": "B", "texto": "Colérico" },
+        { "clave": "C", "texto": "Flemático" },
+        { "clave": "D", "texto": "Melancólico" }
     ]
   },
   {
@@ -278,10 +278,10 @@
       { "clave": "D", "texto": "Se deja tiempo, pero es sincero y exacto. No está especialmente excitado ni es superficial. Agradece sinceramente la absolución. Cumple exactamente la penitencia... ¡cuando se acuerda de ella!" }
     ],
     "resultado": [
-        { "clave": "A", "texto": "C" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "F" }
+        { "clave": "A", "texto": "Colérico" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Flemático" }
     ]
   },
   {
@@ -293,10 +293,10 @@
       { "clave": "D", "texto": "Espera participar de la gloria y del poder divinos. Confía en la palabra del Señor: 'Reinarán sobre las tribus de Israel'. El cielo es para él la mayor excelsitud y grandeza." }
     ],
     "resultado": [
-        { "clave": "A", "texto": "F" },
-        { "clave": "B", "texto": "M" },
-        { "clave": "C", "texto": "S" },
-        { "clave": "D", "texto": "C" }
+        { "clave": "A", "texto": "Flemático" },
+        { "clave": "B", "texto": "Melancólico" },
+        { "clave": "C", "texto": "Sanguíneo" },
+        { "clave": "D", "texto": "Colérico" }
     ]
   }
 ]

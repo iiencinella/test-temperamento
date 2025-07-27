@@ -13,76 +13,60 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <script type="module">
-let questions = [];
-let current = 0;
-let answers = [];
+// Solo ejecutar el cuestionario si estamos en la página principal
+if (window.location.pathname === "/" || window.location.pathname === "/index" || window.location.pathname === "/index.html") {
+  let questions = [];
+  let current = 0;
+  let answers = [];
 
-async function fetchQuestions() {
-  const res = await fetch('/api/questions');
-  questions = await res.json();
-  renderQuestion();
-}
-
-function renderQuestion() {
-  const container = document.getElementById('questionnaire');
-  if (current >= questions.length) {
-    renderResults();
-    return;
-  }
-  const q = questions[current];
-  container.innerHTML = `
-    <div class="question-card">
-      <div class="progress">Pregunta ${current + 1} de ${questions.length}</div>
-      <h2>${q.pregunta}</h2>
-      <form id="optionsForm" class="options">
-        ${q.opciones.map(opt => `
-          <label class="option">
-            <input type="radio" name="option" value="${opt.clave}" required />
-            <span class="option-text">${opt.texto}</span>
-          </label>
-        `).join('')}
-        <button class="next-btn" type="submit">Siguiente</button>
-      </form>
-    </div>
-  `;
-  document.getElementById('optionsForm').onsubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const selected = form.option.value;
-    answers[current] = selected;
-    current++;
+  async function fetchQuestions() {
+    const res = await fetch('/api/questions');
+    questions = await res.json();
     renderQuestion();
-  };
-}
-
-function renderResults() {
-  const container = document.getElementById('questionnaire');
-  // Contar respuestas por clave
-  const stats = {};
-  for (const ans of answers) {
-    stats[ans] = (stats[ans] || 0) + 1;
   }
-  // Mostrar resultados
-  container.innerHTML = `
-    <div class="results-card">
-      <div class="result-content">
-        <div class="result-text">¡Cuestionario completado!</div>
-        <div class="stats">
-          ${Object.entries(stats).map(([clave, count]) => `
-            <div class="stat-bar">
-              <div class="stat-label">${clave}</div>
-              <div class="stat-progress">
-                <div class="stat-fill" style="width: ${(count / questions.length) * 100}%" data-percentage="${Math.round((count / questions.length) * 100)}%"></div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    </div>
-  `;
-}
 
-fetchQuestions();
+  function renderQuestion() {
+    const container = document.getElementById('questionnaire');
+    if (current >= questions.length) {
+      renderResults();
+      return;
+    }
+    const q = questions[current];
+    container.innerHTML = `
+      <div class="question-card">
+        <div class="progress">Pregunta ${current + 1} de ${questions.length}</div>
+        <h2>${q.pregunta}</h2>
+        <form id="optionsForm" class="options">
+          ${q.opciones.map(opt => `
+            <label class="option">
+              <input type="radio" name="option" value="${opt.clave}" required />
+              <span class="option-text">${opt.texto}</span>
+            </label>
+          `).join('')}
+          <button class="next-btn" type="submit">Siguiente</button>
+        </form>
+      </div>
+    `;
+    document.getElementById('optionsForm').onsubmit = (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const selected = form.option.value;
+      answers[current] = selected;
+      current++;
+      renderQuestion();
+    };
+  }
+
+  function renderResults() {
+    // Construir query string con las respuestas
+    const params = questions.map((q, idx) => `q${idx}=${encodeURIComponent(answers[idx] || '')}`).join('&');
+    // Guardar respuestas en una cookie (expira en 1 día)
+    document.cookie = `userAnswers=${encodeURIComponent(JSON.stringify(answers))}; path=/; max-age=86400`;
+    window.location.href = `/respuestas?${params}`;
+  }
+
+  fetchQuestions();
+}
 </script>
 
 <style>

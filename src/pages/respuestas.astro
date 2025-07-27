@@ -1,0 +1,126 @@
+---
+import questions from '../data/question.json';
+import Layout from '../layouts/Layout.astro';
+
+// Obtener respuestas del query string (ejemplo: ?a=A&b=B...)
+const url = new URL(import.meta.env.SITE + Astro.request.url);
+const params = url.searchParams;
+
+// Mapear respuestas a un array de claves seleccionadas
+let userAnswers = questions.map((q, idx) => params.get(`q${idx}`));
+
+// Si no hay respuestas en el query string, intentar leer de la cookie
+if (!userAnswers.some(ans => ans)) {
+  const cookieHeader = Astro.request.headers.get('cookie') || '';
+  const match = cookieHeader.match(/userAnswers=([^;]+)/);
+  if (match) {
+    try {
+      const cookieAnswers = JSON.parse(decodeURIComponent(match[1]));
+      if (Array.isArray(cookieAnswers)) {
+        userAnswers = cookieAnswers;
+      }
+    } catch {}
+  }
+}
+
+// Contar cuántas veces aparece cada valor de resultado según las respuestas
+const resultCount: Record<string, number> = {};
+questions.forEach((q, idx) => {
+  const userKey = userAnswers[idx];
+  if (!userKey) return;
+  const resObj = q.resultado?.find(r => r.clave === userKey);
+  if (resObj && resObj.texto) {
+    resultCount[resObj.texto] = (resultCount[resObj.texto] || 0) + 1;
+  }
+});
+---
+<Layout title="Respuestas del Usuario" description="Resumen de tus respuestas al cuestionario.">
+  <main>
+    <div class="container">
+      <h1>Respuestas del Usuario</h1>
+      <ul>
+        {questions.map((q, idx) => (
+          <li class="question-card" style="margin-bottom:2rem;">
+            <div><strong>{q.pregunta}</strong></div>
+            <div>
+              <span>Respuesta elegida: </span>
+              <span style="color:#4c6ef5;font-weight:600;">
+                {q.opciones.find(opt => opt.clave === userAnswers[idx])?.texto || 'No respondida'}
+              </span>
+            </div>
+          </li>
+        ))}
+      </ul>
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Temperamento</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(resultCount).map(([tipo, cantidad]) => (
+              <tr>
+                <td>{tipo}</td>
+                <td>{cantidad}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="/" class="regen-btn">Volver a responder el cuestionario</a>
+        </div>
+    </div>
+  </main>
+</Layout>
+<style>
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    background: #f8f9fa;
+  }
+  .question-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  .regen-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background: #4c6ef5;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .regen-btn:hover {
+    background: #364fc7;
+  }
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  .results-table th, .results-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+    text-align: left;
+  }
+  .results-table th {
+    background: #f1f3f5;
+    font-weight: 700;
+    color: #364fc7;
+  }
+  .results-table tr:last-child td {
+    border-bottom: none;
+  }
