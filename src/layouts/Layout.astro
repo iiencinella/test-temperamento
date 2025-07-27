@@ -1,5 +1,11 @@
 ---
 import '../styles/global.css';
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title = "Test de temperamento", description = "" } = Astro.props;
 ---
 
 <!doctype html>
@@ -8,9 +14,13 @@ import '../styles/global.css';
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Test de temperamento</title>
+		<meta name="description" content={description}>
+		<title>{title}</title>
 	</head>
 	<body>
+		<header>
+			<h1>{title}</h1>
+		</header>
 		<slot />
 	</body>
 </html>
