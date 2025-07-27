@@ -87,7 +87,7 @@ questions.forEach((q, idx) => {
         </table>
         <div style="text-align:center;margin-top:2rem;display:flex;flex-direction:column;gap:1rem;align-items:center;">
           <button class="print-btn" onclick="window.print()">Imprimir en PDF</button>
-          <a href="/" class="regen-btn">Volver a responder el cuestionario</a>
+          <a href="/" class="regen-btn" onclick="document.cookie='userAnswers=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'">Volver a responder el cuestionario</a>
         </div>
     </div>
   </main>
